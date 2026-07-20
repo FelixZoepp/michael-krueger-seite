@@ -21,6 +21,22 @@ const otherArticles = [
 export default function WohnungstuerenSchallschutzPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: 'Wohnungseingangstüren: Schallschutz, Einbruchschutz & Brandschutz nachrüsten',
+          description: 'Schallschutz, Einbruchschutz und Brandschutz an bestehenden Altbautüren nachrüsten.',
+          image: 'https://michael-krueger-seite.vercel.app/images/leistung-wohnungseingangstuer.jpg',
+          author: { '@type': 'Person', name: 'Michael Krüger', jobTitle: 'Tischlermeister', url: 'https://michael-krueger-seite.vercel.app/team' },
+          publisher: { '@type': 'Organization', name: 'Tischlerei Michael Krüger', url: 'https://michael-krueger-seite.vercel.app' },
+          datePublished: '2024-06-25',
+          dateModified: '2025-01-15',
+          mainEntityOfPage: 'https://michael-krueger-seite.vercel.app/blog/wohnungstueren-schallschutz',
+          keywords: ['Wohnungseingangstür', 'Schallschutz', 'Einbruchschutz', 'Brandschutz', 'Altbautür'],
+        }) }}
+      />
       <PageHero
         title="Wohnungseingangstüren: Schallschutz, Einbruchschutz & Brandschutz nachrüsten"
         tags={['Türen', 'Fachartikel']}

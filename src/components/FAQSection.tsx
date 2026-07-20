@@ -30,7 +30,7 @@ const FAQS = [
   },
   {
     q: 'Was kostet eine Ersteinschätzung?',
-    a: 'Nichts. Wir kommen zu Ihnen, prüfen den Bestand und beraten Sie – kostenfrei und unverbindlich.',
+    a: 'Die telefonische Ersteinschätzung ist kostenfrei und unverbindlich. Schildern Sie uns Ihr Anliegen – gerne auch mit Fotos per WhatsApp.',
   },
 ]
 

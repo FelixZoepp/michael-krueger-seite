@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import ArticleLayout from '@/components/ArticleLayout'
 import Sidebar from '@/components/Sidebar'
 import ScrollReveal from '@/components/ScrollReveal'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Team & Expertise – Tischlermeister Michael Krüger',
@@ -20,6 +22,7 @@ const sidebarProjects = [
 export default function TeamPage() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: 'Startseite', url: '/' }, { name: 'Team' }]} />
       <PageHero
         title="Tischlermeister Michael Krüger & sein Team"
         subtitle="Ein Meisterbetrieb aus Berlin – spezialisiert auf historische Fenster, Türen und Treppen. Seit 1997 im Geschäft, Meister seit 2016."
@@ -50,6 +53,15 @@ export default function TeamPage() {
 
         <ScrollReveal delay={80}>
           <h2>Vom Händler zum Berliner Meister</h2>
+          <div className="team-portrait" style={{ float: 'right', margin: '0 0 24px 32px', maxWidth: '280px', borderRadius: '6px', overflow: 'hidden' }}>
+            <Image
+              src="/images/michael-krueger-portrait.jpg"
+              alt="Tischlermeister Michael Krüger in seiner Werkstatt"
+              width={280}
+              height={320}
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+            />
+          </div>
           <p>
             1997 begann Michael Krüger mit dem Handel historischer Bauelemente – aus der
             Überzeugung heraus, dass Originalsubstanz erhaltenswert ist. Die Faszination für
@@ -76,6 +88,15 @@ export default function TeamPage() {
 
         <ScrollReveal delay={160}>
           <h2>Das Team</h2>
+          <div style={{ margin: '24px 0 32px', borderRadius: '6px', overflow: 'hidden' }}>
+            <Image
+              src="/images/team-krueger.jpg"
+              alt="Das Team der Tischlerei Krüger – 9 Mitarbeiter vor der Werkstatt in Zossen"
+              width={800}
+              height={533}
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+            />
+          </div>
           <p>
             Rund neun Personen arbeiten fest in unserem Betrieb: 1 Meister, 4 Gesellen,
             3 Auszubildende und 1,5 Bürostellen – keine Leiharbeiter, keine Subunternehmer.
@@ -91,12 +112,32 @@ export default function TeamPage() {
         </ScrollReveal>
 
         <ScrollReveal delay={200}>
-          <h2>Werkstatt in Berlin-Reinickendorf</h2>
+          <h2>Werkstatt in Zossen</h2>
+          <div className="team-werkstatt-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', margin: '24px 0' }}>
+            <div style={{ borderRadius: '6px', overflow: 'hidden' }}>
+              <Image
+                src="/images/mm001.jpg"
+                alt="Michael Krüger beim Hobeln in der Werkstatt"
+                width={400}
+                height={267}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
+            <div style={{ borderRadius: '6px', overflow: 'hidden' }}>
+              <Image
+                src="/images/mm005.jpg"
+                alt="Michael Krüger bei der Arbeit an der Werkbank"
+                width={400}
+                height={267}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
+          </div>
           <p>
-            Unsere 300 m² große Werkstatt in Berlin-Reinickendorf ist das Herzstück des
+            Unsere 300 m² große Werkstatt in Zossen ist das Herzstück des
             Betriebs. Hier entstehen Fenster, Türen und Sonderanfertigungen – ausschließlich
             aus Brandenburger Kieferbohlen, mit traditionellen Handwerkstechniken und moderner
-            Produktionstechnik. Die Lage mitten in Berlin ermöglicht kurze Wege zu unseren
+            Produktionstechnik. Die Lage südlich von Berlin ermöglicht kurze Wege zu unseren
             Baustellen in der ganzen Stadt und im Umland.
           </p>
         </ScrollReveal>

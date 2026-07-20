@@ -16,8 +16,8 @@ const structuredData = {
   name: 'Tischlerei Krüger',
   description:
     'Restaurierung historischer Fenster und Türen in Berlin und Brandenburg. Kastenfenster, Haustüren, Treppenhäuser – denkmalgerecht und handwerklich.',
-  url: 'https://www.tischlerei-krueger-berlin.de/berlin',
-  telephone: '+491636983248',
+  url: 'https://michael-krueger-seite.vercel.app/berlin',
+  telephone: '+493085607830',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Berlin',
@@ -248,7 +248,7 @@ export default function BerlinPage() {
             >
               Oder rufen Sie uns an:{' '}
               <a
-                href="tel:+491636983248"
+                href="tel:+493085607830"
                 style={{
                   color: 'rgba(255,255,255,0.75)',
                   textDecoration: 'none',

@@ -21,6 +21,22 @@ const otherArticles = [
 export default function KastenfensterPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: 'Kastenfenster restaurieren statt austauschen – was wirklich dahintersteckt',
+          description: 'Warum sich die Restaurierung von Kastenfenstern im Berliner Altbau fast immer lohnt – und wie eine fachgerechte Aufarbeitung abläuft.',
+          image: 'https://michael-krueger-seite.vercel.app/images/leistung-historische-fenster.jpg',
+          author: { '@type': 'Person', name: 'Michael Krüger', jobTitle: 'Tischlermeister', url: 'https://michael-krueger-seite.vercel.app/team' },
+          publisher: { '@type': 'Organization', name: 'Tischlerei Michael Krüger', url: 'https://michael-krueger-seite.vercel.app' },
+          datePublished: '2024-06-25',
+          dateModified: '2025-01-15',
+          mainEntityOfPage: 'https://michael-krueger-seite.vercel.app/blog/kastenfenster',
+          keywords: ['Kastenfenster', 'Restaurierung', 'Berlin Altbau', 'Fenstererhalt'],
+        }) }}
+      />
       <PageHero
         title="Kastenfenster restaurieren statt austauschen – was wirklich dahintersteckt"
         tags={['Fenster', 'Fachartikel']}

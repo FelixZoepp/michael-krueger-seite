@@ -42,8 +42,8 @@ export default async function BrandenburgStadtPage({ params }: Props) {
     '@type': 'LocalBusiness',
     name: 'Tischlerei Michael Krüger',
     description: `Historische Fenster und Türen restaurieren in ${data.name} – Tischlerei Michael Krüger`,
-    url: `https://www.historische-bauelemente.de/brandenburg/${data.slug}`,
-    telephone: '+4930856078300',
+    url: `https://michael-krueger-seite.vercel.app/brandenburg/${data.slug}`,
+    telephone: '+493085607830',
     email: 'info@historische-bauelemente.de',
     address: {
       '@type': 'PostalAddress',

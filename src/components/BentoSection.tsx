@@ -53,27 +53,40 @@ function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: str
 
 function ShieldIcon() {
   return (
-    <svg
-      width="40"
-      height="40"
-      viewBox="0 0 40 40"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <path
-        d="M20 4L6 10V20C6 28.3 12.1 36.1 20 38C27.9 36.1 34 28.3 34 20V10L20 4Z"
-        stroke="var(--brand)"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M14 20L18 24L26 16"
-        stroke="var(--brand)"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+      <path d="M20 4L6 10V20C6 28.3 12.1 36.1 20 38C27.9 36.1 34 28.3 34 20V10L20 4Z" stroke="var(--brand)" strokeWidth="2" strokeLinejoin="round" />
+      <path d="M14 20L18 24L26 16" stroke="var(--brand)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+function MeisterIcon() {
+  return (
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+      <circle cx="22" cy="22" r="18" stroke="var(--brand)" strokeWidth="2" />
+      <path d="M22 10L25.5 17.5H33L27 22.5L29 30L22 25.5L15 30L17 22.5L11 17.5H18.5L22 10Z" fill="var(--brand)" fillOpacity="0.25" stroke="var(--brand)" strokeWidth="1.5" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+function WerterhaltIcon() {
+  return (
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+      <path d="M8 34V20" stroke="var(--brand)" strokeWidth="3" strokeLinecap="round" />
+      <path d="M16 34V16" stroke="var(--brand)" strokeWidth="3" strokeLinecap="round" />
+      <path d="M24 34V12" stroke="var(--brand)" strokeWidth="3" strokeLinecap="round" />
+      <path d="M32 34V8" stroke="var(--brand)" strokeWidth="3" strokeLinecap="round" />
+      <path d="M36 34H6" stroke="var(--brand)" strokeWidth="2" strokeLinecap="round" />
+      <path d="M8 20L16 16L24 12L32 8" stroke="var(--brand)" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="3 3" opacity="0.5" />
+    </svg>
+  )
+}
+
+function MapPinIcon() {
+  return (
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+      <path d="M22 6C15.4 6 10 11.4 10 18C10 27 22 38 22 38C22 38 34 27 34 18C34 11.4 28.6 6 22 6Z" stroke="var(--brand)" strokeWidth="2" strokeLinejoin="round" />
+      <circle cx="22" cy="18" r="5" fill="var(--brand)" fillOpacity="0.2" stroke="var(--brand)" strokeWidth="1.8" />
     </svg>
   )
 }
@@ -91,7 +104,7 @@ export default function BentoSection() {
           transition={{ duration: 0.6 }}
         >
           <span className="eyebrow">Warum Wir</span>
-          <h2 style={{ marginTop: '16px', marginBottom: '48px' }}>5 Gründe für Krüger</h2>
+          <h2 style={{ marginTop: '16px', marginBottom: '48px' }}>5 Gründe für einen Tischlermeister</h2>
         </motion.div>
 
         <div
@@ -145,11 +158,14 @@ export default function BentoSection() {
                 pointerEvents: 'none',
               }}
             />
+            <div style={{ marginBottom: '20px' }}>
+              <MeisterIcon />
+            </div>
             <div
               style={{
                 position: 'absolute',
                 top: '32px',
-                left: '40px',
+                right: '40px',
                 fontFamily: 'var(--ff-display, Georgia, serif)',
                 fontSize: 'clamp(4rem, 8vw, 7rem)',
                 fontWeight: 700,
@@ -172,15 +188,26 @@ export default function BentoSection() {
             >
               <AnimatedCounter target={25} suffix="+" />
             </div>
+            <h3
+              style={{
+                color: '#ffffff',
+                fontSize: '1.15rem',
+                fontFamily: 'var(--ff-display, Georgia, serif)',
+                fontWeight: 600,
+                marginBottom: '8px',
+              }}
+            >
+              Jahre Meisterhandwerk
+            </h3>
             <p
               style={{
-                color: 'rgba(255,255,255,0.75)',
+                color: 'rgba(255,255,255,0.8)',
                 fontSize: '1rem',
                 lineHeight: 1.55,
                 maxWidth: '280px',
               }}
             >
-              Echtes Meisterhandwerk seit über 25 Jahren.
+              Echtes Meisterhandwerk seit über 25 Jahren – Erfahrung, die man sieht.
             </p>
           </motion.div>
 
@@ -201,6 +228,9 @@ export default function BentoSection() {
               justifyContent: 'space-between',
             }}
           >
+            <div style={{ marginBottom: '16px' }}>
+              <WerterhaltIcon />
+            </div>
             <div
               style={{
                 fontFamily: 'var(--ff-display, Georgia, serif)',
@@ -333,17 +363,20 @@ export default function BentoSection() {
                 justifyContent: 'space-between',
               }}
             >
-              <span
-                style={{
-                  fontFamily: 'var(--ff-display, Georgia, serif)',
-                  fontSize: 'clamp(1.4rem, 2.5vw, 2rem)',
-                  fontWeight: 700,
-                  color: 'var(--brand)',
-                }}
-              >
-                1.100+ Projekte
+              <span style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <MapPinIcon />
+                <span
+                  style={{
+                    fontFamily: 'var(--ff-display, Georgia, serif)',
+                    fontSize: 'clamp(1.4rem, 2.5vw, 2rem)',
+                    fontWeight: 700,
+                    color: 'var(--brand)',
+                  }}
+                >
+                  1.100+ Projekte
+                </span>
               </span>
-              <span style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.45)' }}>
+              <span style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.65)' }}>
                 in ganz Berlin & Brandenburg
               </span>
             </div>
@@ -432,9 +465,13 @@ export default function BentoSection() {
           }
           .bento-tile-large {
             grid-column: span 1 !important;
+            padding: 28px 20px !important;
           }
           .bento-marquee-tile {
             grid-column: span 1 !important;
+          }
+          .bento-tile {
+            padding: 24px 20px !important;
           }
         }
       `}</style>

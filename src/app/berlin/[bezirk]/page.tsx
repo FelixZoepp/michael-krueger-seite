@@ -33,8 +33,8 @@ export default async function BezirkPage({ params }: Props) {
     '@type': 'LocalBusiness',
     name: 'Tischlerei Krüger',
     description: `Restaurierung historischer Fenster & Türen in ${data.name}, Berlin.`,
-    url: `https://www.tischlerei-krueger-berlin.de/berlin/${data.slug}`,
-    telephone: '+491636983248',
+    url: `https://michael-krueger-seite.vercel.app/berlin/${data.slug}`,
+    telephone: '+493085607830',
     address: {
       '@type': 'PostalAddress',
       addressLocality: `${data.name}, Berlin`,
@@ -503,7 +503,7 @@ export default async function BezirkPage({ params }: Props) {
             >
               Oder rufen Sie uns an:{' '}
               <a
-                href="tel:+491636983248"
+                href="tel:+493085607830"
                 style={{
                   color: 'rgba(255,255,255,0.75)',
                   textDecoration: 'none',

@@ -16,7 +16,7 @@ export default function UeberUnsSection() {
           className="ueber-grid"
         >
           {/* Left: Image */}
-          <ScrollReveal>
+          <ScrollReveal direction="left">
             {/* Old-photograph frame treatment */}
             <div
               style={{
@@ -70,14 +70,14 @@ export default function UeberUnsSection() {
           </ScrollReveal>
 
           {/* Right: Text */}
-          <ScrollReveal delay={100}>
+          <ScrollReveal delay={100} direction="right">
             <span className="eyebrow">Über Uns</span>
             <h2 style={{ marginTop: '16px', marginBottom: '20px' }}>25+ Jahre Erfahrung – Meisterbetrieb seit 2016</h2>
             <p style={{ lineHeight: 1.75, marginBottom: '16px' }}>
               Seit 1997 handelt Michael Krüger mit historischen Bauelementen – mit einer klaren
               Mission: Erhalten statt ersetzen. 2016 legte er die Meisterprüfung ab und führt
               seitdem einen anerkannten Meisterbetrieb. Heute arbeitet ein neunköpfiges Team in
-              unserer 300 m² großen Werkstatt in Berlin-Reinickendorf – spezialisiert auf
+              unserer 300 m² großen Werkstatt in Zossen – spezialisiert auf
               Kastenfenster, Altbautüren und denkmalgerechte Restaurierung.
             </p>
             <p style={{ lineHeight: 1.75, marginBottom: '28px' }}>

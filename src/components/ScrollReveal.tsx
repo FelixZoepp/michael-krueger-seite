@@ -5,10 +5,12 @@ export default function ScrollReveal({
   children,
   className = '',
   delay = 0,
+  direction,
 }: {
   children: React.ReactNode
   className?: string
   delay?: number
+  direction?: 'left' | 'right' | 'scale' | 'fade'
 }) {
   const ref = useRef<HTMLDivElement>(null)
   useEffect(() => {
@@ -21,13 +23,16 @@ export default function ScrollReveal({
           observer.unobserve(el)
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.12 }
     )
     observer.observe(el)
     return () => observer.disconnect()
   }, [])
+
+  const dirClass = direction ? ` reveal--${direction}` : ''
+
   return (
-    <div ref={ref} className={`reveal ${className}`} style={{ transitionDelay: `${delay}ms` }}>
+    <div ref={ref} className={`reveal${dirClass} ${className}`} style={{ transitionDelay: `${delay}ms` }}>
       {children}
     </div>
   )

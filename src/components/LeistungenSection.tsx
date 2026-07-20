@@ -67,7 +67,7 @@ export default function LeistungenSection() {
                   borderRadius: 'var(--r)',
                   overflow: 'hidden',
                   boxShadow: '2px 3px 12px rgba(42,39,36,0.07), -1px 1px 6px rgba(42,39,36,0.03)',
-                  transition: 'box-shadow 0.26s ease, transform 0.26s ease',
+                  transition: 'box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), transform 0.35s cubic-bezier(0.22, 1, 0.36, 1)',
                   height: '100%',
                   display: 'flex',
                   flexDirection: 'column',
@@ -80,7 +80,7 @@ export default function LeistungenSection() {
                     alt={service.title}
                     fill
                     className="service-img"
-                    style={{ objectFit: 'cover', transition: 'transform 0.4s ease' }}
+                    style={{ objectFit: 'cover', transition: 'transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)' }}
                     sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
                   />
                   {/* Warm tint overlay on hover */}
@@ -165,6 +165,9 @@ export default function LeistungenSection() {
         @media (max-width: 560px) {
           .leistungen-grid {
             grid-template-columns: 1fr !important;
+          }
+          .service-img-wrap {
+            height: 180px !important;
           }
         }
       `}</style>

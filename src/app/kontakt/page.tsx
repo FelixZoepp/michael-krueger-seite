@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import PageHero from '@/components/PageHero'
 import KontaktForm from '@/components/KontaktForm'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Kontakt & Ersteinschätzung | Tischlerei Krüger',
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function KontaktPage() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: 'Startseite', url: '/' }, { name: 'Kontakt' }]} />
       <PageHero
         title="Kostenlose Ersteinschätzung anfragen"
         subtitle="In wenigen Schritten zu Ihrem unverbindlichen Angebot – wir kommen kostenfrei zu Ihnen vor Ort."

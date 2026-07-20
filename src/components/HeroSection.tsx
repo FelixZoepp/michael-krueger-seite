@@ -49,7 +49,7 @@ export default function HeroSection() {
           <h1
             style={{
               fontFamily: 'var(--ff-display, Georgia, serif)',
-              fontSize: 'clamp(2.4rem, 5vw, 3.8rem)',
+              fontSize: 'clamp(1.7rem, 4.5vw, 3.6rem)',
               fontWeight: 600,
               color: '#ffffff',
               lineHeight: 1.1,
@@ -80,7 +80,7 @@ export default function HeroSection() {
               <path d="M7 1C4.8 1 3 2.8 3 5c0 3 4 7.5 4 7.5S11 8 11 5c0-2.2-1.8-4-4-4Zm0 5.5A1.5 1.5 0 1 1 7 3.5a1.5 1.5 0 0 1 0 3Z" fill="var(--brand)" />
             </svg>
             <span style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.82rem', fontWeight: 600, letterSpacing: '0.03em' }}>
-              Berlin &amp; Brandenburg · Werkstatt in Berlin-Reinickendorf
+              Berlin &amp; Brandenburg · Werkstatt in Zossen
             </span>
           </div>
 
@@ -109,6 +109,7 @@ export default function HeroSection() {
 
           {/* Trust row */}
           <div
+            className="hero-trust-row"
             style={{
               marginTop: '40px',
               display: 'flex',
@@ -154,6 +155,16 @@ export default function HeroSection() {
               background: linear-gradient(90deg, var(--brand) 0%, var(--beam-hi) 60%, transparent 100%);
               border-radius: 2px;
               opacity: 0.85;
+            }
+            @media (max-width: 480px) {
+              .hero-trust-row {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 8px !important;
+              }
+              .hero-trust-row .hero-trust-divider {
+                display: none;
+              }
             }
           `}</style>
         </motion.div>

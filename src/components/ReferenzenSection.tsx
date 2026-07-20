@@ -1,30 +1,23 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 const PROJECTS = [
   {
-    image: '/images/referenz-olympiastadion.jpg',
     title: 'Olympiastadion Berlin',
-    problem: 'Verwitterte Außentür im denkmalgeschützten Bereich',
-    loesung: 'Massivholztür mit moderner Sicherheitstechnik',
-    ergebnis: 'Öffentlich abgenommen und denkmalgerecht',
+    typ: 'Außentür-Restaurierung',
+    beschreibung: 'Massivholztür mit moderner Sicherheitstechnik – denkmalgerecht und öffentlich abgenommen.',
     href: '/projekte/olympiastadion',
   },
   {
-    image: '/images/referenz-kennedysaal.jpg',
     title: 'Kennedysaal Berlin',
-    problem: 'Historische Fenstertüren undicht und energetisch schwach',
-    loesung: 'Stilechte Rekonstruktion mit Isolierverglasung',
-    ergebnis: 'Originalgetreue Optik mit moderner Dämmung',
+    typ: 'Fenstertüren-Rekonstruktion',
+    beschreibung: 'Stilechte Rekonstruktion historischer Fenstertüren mit Isolierverglasung – originalgetreue Optik mit moderner Dämmung.',
     href: '/projekte/kennedysaal',
   },
   {
-    image: '/images/referenz-kita-altbaufenster.jpg',
     title: 'Kita Berlin-Spandau',
-    problem: 'Altbaufenster in einer Kindereinrichtung marode',
-    loesung: 'Aufarbeitung statt Austausch – kindersicher und emissionsarm',
-    ergebnis: '40–60 % günstiger als neue Fenster',
+    typ: 'Altbaufenster-Aufarbeitung',
+    beschreibung: 'Aufarbeitung statt Austausch – kindersicher, emissionsarm und 40–60 % günstiger als neue Fenster.',
     href: '/projekte/kita',
   },
 ]
@@ -32,157 +25,87 @@ const PROJECTS = [
 export default function ReferenzenSection() {
   return (
     <section className="section" id="referenzen" style={{ backgroundColor: 'var(--bg)' }}>
-      <div className="wrap">
+      <div className="wrap" style={{ maxWidth: '800px' }}>
         <ScrollReveal>
           <span className="eyebrow">Referenzen</span>
-          <h2 style={{ marginTop: '16px', marginBottom: '52px' }}>Ausgewählte Projekte</h2>
+          <h2 style={{ marginTop: '16px', marginBottom: '48px' }}>Unsere Referenzen</h2>
         </ScrollReveal>
 
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '28px',
-          }}
-          className="referenz-grid"
-        >
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
           {PROJECTS.map((project, i) => (
-            <ScrollReveal key={project.title} delay={i * 100}>
-              <article
-                className="referenz-card"
+            <ScrollReveal key={project.title} delay={i * 80}>
+              <Link
+                href={project.href}
+                className="ref-list-item"
                 style={{
-                  backgroundColor: 'var(--paper)',
-                  borderRadius: 'var(--r)',
-                  overflow: 'hidden',
-                  /* Photo frame: outer shadow + inner mat border */
-                  boxShadow: '0 2px 12px rgba(42,39,36,0.09), 0 0 0 1px rgba(42,39,36,0.06)',
-                  transition: 'box-shadow 0.26s ease, transform 0.26s ease',
-                  height: '100%',
                   display: 'flex',
-                  flexDirection: 'column',
-                  /* Inner mat effect via outline */
-                  outline: '4px solid var(--paper)',
-                  outlineOffset: '-6px',
+                  alignItems: 'flex-start',
+                  justifyContent: 'space-between',
+                  gap: '24px',
+                  padding: '28px 0',
+                  borderBottom: '1px solid var(--line)',
+                  textDecoration: 'none',
+                  color: 'inherit',
+                  transition: 'padding-left 0.2s ease',
                 }}
               >
-                {/* Image with zoom on hover */}
-                <div
-                  className="referenz-img-wrap"
-                  style={{ position: 'relative', height: '220px', flexShrink: 0, overflow: 'hidden' }}
-                >
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="referenz-img"
-                    style={{ objectFit: 'cover', transition: 'transform 0.45s ease' }}
-                    sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
-                  />
-                </div>
-                <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                  <h3
-                    style={{
-                      fontFamily: 'var(--ff-display, Georgia, serif)',
-                      fontSize: '1.15rem',
-                      color: 'var(--ink)',
-                      marginBottom: '16px',
-                    }}
-                  >
-                    {project.title}
-                  </h3>
-                  <div
-                    style={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: '8px',
-                      marginBottom: '20px',
-                      flex: 1,
-                    }}
-                  >
-                    {[
-                      { label: 'Problem', value: project.problem, dot: '#c0392b' },
-                      { label: 'Lösung', value: project.loesung, dot: 'var(--brand)' },
-                      { label: 'Ergebnis', value: project.ergebnis, dot: '#4a7c4e' },
-                    ].map(({ label, value, dot }) => (
-                      <div key={label} style={{ display: 'flex', gap: '10px', fontSize: '0.875rem', alignItems: 'flex-start' }}>
-                        {/* Colored dot icon */}
-                        <span
-                          style={{
-                            display: 'inline-block',
-                            width: '8px',
-                            height: '8px',
-                            borderRadius: '50%',
-                            backgroundColor: dot,
-                            flexShrink: 0,
-                            marginTop: '5px',
-                          }}
-                        />
-                        <span>
-                          <span
-                            style={{
-                              color: 'var(--ink)',
-                              fontWeight: 600,
-                              marginRight: '4px',
-                            }}
-                          >
-                            {label}:
-                          </span>
-                          <span style={{ color: 'var(--ink-soft)' }}>{value}</span>
-                        </span>
-                      </div>
-                    ))}
+                <div style={{ flex: 1 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '6px' }}>
+                    <h3
+                      style={{
+                        fontFamily: 'var(--ff-display, Georgia, serif)',
+                        fontSize: '1.15rem',
+                        color: 'var(--ink)',
+                        margin: 0,
+                      }}
+                    >
+                      {project.title}
+                    </h3>
+                    <span
+                      style={{
+                        fontSize: '0.75rem',
+                        fontWeight: 600,
+                        color: 'var(--brand-dark)',
+                        backgroundColor: 'var(--brand-tint)',
+                        padding: '2px 10px',
+                        borderRadius: '100px',
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      {project.typ}
+                    </span>
                   </div>
-                  <Link
-                    href={project.href}
-                    className="referenz-link"
-                    style={{
-                      fontSize: '0.875rem',
-                      fontWeight: 600,
-                      color: 'var(--brand-dark)',
-                      textDecoration: 'none',
-                      display: 'inline-block',
-                    }}
-                  >
-                    Projekt ansehen →
-                  </Link>
+                  <p style={{ fontSize: '0.92rem', lineHeight: 1.65, color: 'var(--ink-soft)', margin: 0 }}>
+                    {project.beschreibung}
+                  </p>
                 </div>
-              </article>
+                <span
+                  className="ref-arrow"
+                  style={{
+                    fontSize: '1.2rem',
+                    color: 'var(--brand)',
+                    flexShrink: 0,
+                    marginTop: '4px',
+                    transition: 'transform 0.2s ease',
+                  }}
+                >
+                  →
+                </span>
+              </Link>
             </ScrollReveal>
           ))}
         </div>
       </div>
 
       <style>{`
-        .referenz-card:hover {
-          box-shadow: 0 12px 40px rgba(42,39,36,0.16), 0 0 0 1px rgba(179,135,63,0.15);
-          transform: translateY(-4px);
+        .ref-list-item:hover {
+          padding-left: 8px !important;
         }
-        .referenz-card:hover .referenz-img {
-          transform: scale(1.03);
+        .ref-list-item:hover .ref-arrow {
+          transform: translateX(4px);
         }
-        .referenz-link {
-          position: relative;
-        }
-        .referenz-link::after {
-          content: '';
-          position: absolute;
-          bottom: -2px;
-          left: 0;
-          width: 0;
-          height: 1.5px;
-          background-color: var(--brand-dark);
-          transition: width 0.24s ease;
-        }
-        .referenz-card:hover .referenz-link::after {
-          width: 100%;
-        }
-        .referenz-grid {
-          grid-template-columns: repeat(3, 1fr);
-        }
-        @media (max-width: 980px) {
-          .referenz-grid {
-            grid-template-columns: 1fr !important;
-          }
+        .ref-list-item:first-child {
+          border-top: 1px solid var(--line);
         }
       `}</style>
     </section>

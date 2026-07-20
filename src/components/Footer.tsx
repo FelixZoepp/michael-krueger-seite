@@ -1,23 +1,7 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
-
-function WindowIconWhite() {
-  return (
-    <svg
-      width="36"
-      height="36"
-      viewBox="0 0 36 36"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <rect x="4" y="4" width="28" height="28" rx="3" stroke="var(--brand)" strokeWidth="2" />
-      <line x1="4" y1="13" x2="32" y2="13" stroke="var(--brand)" strokeWidth="2" />
-      <line x1="18" y1="13" x2="18" y2="32" stroke="var(--brand)" strokeWidth="2" />
-    </svg>
-  )
-}
 
 export default function Footer() {
   return (
@@ -39,37 +23,22 @@ export default function Footer() {
               <Link
                 href="/"
                 style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '12px',
+                  display: 'inline-block',
                   textDecoration: 'none',
                   marginBottom: '20px',
                 }}
               >
-                <WindowIconWhite />
-                <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2 }}>
-                  <span
-                    style={{
-                      fontFamily: 'var(--ff-display, Georgia, serif)',
-                      fontWeight: 700,
-                      fontSize: '1.05rem',
-                      color: '#ffffff',
-                      letterSpacing: '-0.01em',
-                    }}
-                  >
-                    Michael Krüger
-                  </span>
-                  <span
-                    style={{
-                      fontSize: '0.72rem',
-                      color: 'rgba(255,255,255,0.5)',
-                      fontWeight: 500,
-                      letterSpacing: '0.04em',
-                    }}
-                  >
-                    Tischlerei · seit 1997
-                  </span>
-                </span>
+                <Image
+                  src="/images/logo-tischlermeister.png"
+                  alt="Krüger Tischlermeister – Logo"
+                  width={180}
+                  height={50}
+                  style={{
+                    height: '40px',
+                    width: 'auto',
+                    filter: 'brightness(0) invert(1)',
+                  }}
+                />
               </Link>
 
               <address
@@ -173,7 +142,7 @@ export default function Footer() {
                 {[
                   { label: 'Leistungen', href: '/#leistungen' },
                   { label: 'Team', href: '/team' },
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Ratgeber', href: '/blog' },
                   { label: 'Kontakt', href: '/kontakt' },
                 ].map(({ label, href }) => (
                   <li key={href}>
@@ -249,6 +218,7 @@ export default function Footer() {
         @media (max-width: 480px) {
           .footer-grid {
             grid-template-columns: 1fr !important;
+            gap: 28px !important;
           }
         }
       `}</style>

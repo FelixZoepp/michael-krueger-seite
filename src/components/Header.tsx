@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -10,7 +11,7 @@ const NAV_LINKS = [
   { label: 'Werterhalt', href: '/#werterhalt' },
   { label: 'Referenzen', href: '/#referenzen' },
   { label: 'Team', href: '/team' },
-  { label: 'Blog', href: '/blog' },
+  { label: 'Ratgeber', href: '/blog' },
   { label: 'Kontakt', href: '/kontakt' },
 ]
 
@@ -113,32 +114,21 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none', flexShrink: 0 }}
+            style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}
           >
-            <WindowIcon />
-            <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2 }}>
-              <span
-                style={{
-                  fontFamily: 'var(--ff-display, Georgia, serif)',
-                  fontWeight: 700,
-                  fontSize: '1.05rem',
-                  color: 'var(--ink)',
-                  letterSpacing: '-0.01em',
-                }}
-              >
-                Michael Krüger
-              </span>
-              <span
-                style={{
-                  fontSize: '0.72rem',
-                  color: 'var(--muted)',
-                  fontWeight: 500,
-                  letterSpacing: '0.04em',
-                }}
-              >
-                Tischlerei · seit 1997
-              </span>
-            </span>
+            <Image
+              src="/images/logo-tischlermeister.png"
+              alt="Krüger Tischlermeister – Logo"
+              width={180}
+              height={50}
+              style={{
+                height: '40px',
+                width: 'auto',
+                filter: isHome && !scrolled ? 'brightness(0) invert(1)' : 'none',
+                transition: 'filter 0.25s ease',
+              }}
+              priority
+            />
           </Link>
 
           {/* Desktop nav — hidden below 980px */}

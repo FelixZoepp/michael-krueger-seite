@@ -1,5 +1,13 @@
 import ScrollReveal from '@/components/ScrollReveal'
 
+function IconPhone() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <path d="M2 2.5C2 2.5 3 1 4.5 1C5.5 1 6.5 2 7 3L7.5 4.5C7.8 5.3 7.5 6.2 6.8 6.7L6 7.2C6.7 8.6 7.4 9.3 8.8 10L9.3 9.2C9.8 8.5 10.7 8.2 11.5 8.5L13 9C14 9.5 15 10.5 15 11.5C15 13 13.5 14 13.5 14C12 15 5 13 2 6.5C0.5 3.5 2 2.5 2 2.5Z" stroke="var(--brand)" strokeWidth="1.5" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
 function IconMagnifier() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
@@ -30,23 +38,30 @@ function IconHammer() {
 const STEPS = [
   {
     num: '01',
-    title: 'Kostenlose Ersteinschätzung',
+    title: 'Kostenlose telefonische Ersteinschätzung',
     description:
-      'Sie schildern Ihr Anliegen – wir kommen vorbei, prüfen den Bestand und beraten Sie vor Ort. Kostenfrei und unverbindlich.',
-    icon: <IconMagnifier />,
+      'Rufen Sie uns an und schildern Sie Ihr Anliegen. Wir geben Ihnen eine erste Einschätzung – kostenfrei und unverbindlich. Gerne können Sie uns vorab Bilder per WhatsApp senden.',
+    icon: <IconPhone />,
   },
   {
     num: '02',
-    title: 'Festes Angebot',
+    title: 'Besichtigung vor Ort',
     description:
-      'Sie erhalten ein transparentes Festpreisangebot – ohne versteckte Kosten, mit klarem Zeitplan.',
-    icon: <IconPaper />,
+      'Wir kommen zu Ihnen, prüfen den Bestand und besprechen die Möglichkeiten direkt am Objekt.',
+    icon: <IconMagnifier />,
   },
   {
     num: '03',
-    title: 'Meisterhafte Ausführung',
+    title: 'Transparentes Angebot',
     description:
-      'Unser fünfköpfiges Team setzt die Arbeiten um – termingerecht, sauber und mit Gewährleistung.',
+      'Sie erhalten ein Festpreisangebot – ohne versteckte Kosten, mit klarem Zeitplan.',
+    icon: <IconPaper />,
+  },
+  {
+    num: '04',
+    title: 'Umsetzung ohne Ihren Zeitaufwand',
+    description:
+      'Unser Team übernimmt die komplette Ausführung – termingerecht, sauber und mit Gewährleistung. Sie müssen sich um nichts kümmern.',
     icon: <IconHammer />,
   },
 ]
@@ -58,15 +73,15 @@ export default function AblaufSection() {
         <ScrollReveal>
           <span className="eyebrow">So läuft's</span>
           <h2 style={{ marginTop: '16px', marginBottom: '56px' }}>
-            In drei Schritten zum Ergebnis
+            In vier Schritten zum Ergebnis
           </h2>
         </ScrollReveal>
 
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '40px',
+            gridTemplateColumns: 'repeat(4, 1fr)',
+            gap: '32px',
             position: 'relative',
           }}
           className="ablauf-grid"
@@ -157,7 +172,12 @@ export default function AblaufSection() {
 
       <style>{`
         .ablauf-grid {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
+        }
+        @media (max-width: 980px) {
+          .ablauf-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
         }
         @media (max-width: 768px) {
           .ablauf-grid {

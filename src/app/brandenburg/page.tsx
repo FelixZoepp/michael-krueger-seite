@@ -330,7 +330,7 @@ export default function BrandenburgPage() {
                     Kontakt aufnehmen
                   </Link>
                   <a
-                    href="tel:+4930856078300"
+                    href="tel:+493085607830"
                     className="btn btn--ghost"
                     style={{ textDecoration: 'none' }}
                   >

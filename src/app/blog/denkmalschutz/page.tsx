@@ -21,6 +21,22 @@ const otherArticles = [
 export default function DenkmalschutzPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: 'Fenster & Türen im Denkmalschutz – was Eigentümer wissen müssen',
+          description: 'Was Eigentümer denkmalgeschützter Gebäude über Fenster und Türen wissen müssen.',
+          image: 'https://michael-krueger-seite.vercel.app/images/leistung-reparatur-restaurierung.jpg',
+          author: { '@type': 'Person', name: 'Michael Krüger', jobTitle: 'Tischlermeister', url: 'https://michael-krueger-seite.vercel.app/team' },
+          publisher: { '@type': 'Organization', name: 'Tischlerei Michael Krüger', url: 'https://michael-krueger-seite.vercel.app' },
+          datePublished: '2024-06-25',
+          dateModified: '2025-01-15',
+          mainEntityOfPage: 'https://michael-krueger-seite.vercel.app/blog/denkmalschutz',
+          keywords: ['Denkmalschutz', 'historische Fenster', 'Genehmigungspflicht', 'Denkmalschutzbehörde'],
+        }) }}
+      />
       <PageHero
         title="Fenster & Türen im Denkmalschutz – was Eigentümer wissen müssen"
         tags={['Denkmalschutz', 'Fachartikel']}

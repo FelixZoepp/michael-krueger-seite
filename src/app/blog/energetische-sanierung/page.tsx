@@ -21,6 +21,22 @@ const otherArticles = [
 export default function EnergetischeSanierungPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: 'Altbaufenster energetisch sanieren – bessere Dämmwerte ohne Denkmalverlust',
+          description: 'Bessere Dämmwerte ohne Substanzverlust – die wirksamsten Maßnahmen für historische Fenster im Berliner Altbau.',
+          image: 'https://michael-krueger-seite.vercel.app/images/leistung-energetische-fenstersanierung.jpg',
+          author: { '@type': 'Person', name: 'Michael Krüger', jobTitle: 'Tischlermeister', url: 'https://michael-krueger-seite.vercel.app/team' },
+          publisher: { '@type': 'Organization', name: 'Tischlerei Michael Krüger', url: 'https://michael-krueger-seite.vercel.app' },
+          datePublished: '2024-06-25',
+          dateModified: '2025-01-15',
+          mainEntityOfPage: 'https://michael-krueger-seite.vercel.app/blog/energetische-sanierung',
+          keywords: ['energetische Sanierung', 'Altbaufenster', 'Dämmwerte', 'Fenstersanierung'],
+        }) }}
+      />
       <PageHero
         title="Altbaufenster energetisch sanieren – bessere Dämmwerte ohne Denkmalverlust"
         tags={['Energie', 'Fachartikel']}

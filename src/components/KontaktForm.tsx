@@ -170,6 +170,7 @@ export default function KontaktForm() {
                     {STEPS[step].question}
                   </p>
                   <div
+                    className="form-options-grid"
                     style={{
                       display: 'grid',
                       gridTemplateColumns: 'repeat(2, 1fr)',
@@ -263,134 +264,9 @@ export default function KontaktForm() {
         )}
       </div>
 
-      {/* Direct contact section */}
-      <div style={{ maxWidth: '640px', margin: '40px auto 0' }}>
-        <p
-          style={{
-            textAlign: 'center',
-            fontSize: '0.875rem',
-            color: 'var(--muted)',
-            fontWeight: 500,
-            marginBottom: '20px',
-            textTransform: 'uppercase',
-            letterSpacing: '0.06em',
-          }}
-        >
-          Oder kontaktieren Sie uns direkt
-        </p>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '16px',
-          }}
-          className="kontakt-direct-grid"
-        >
-          {/* Phone card */}
-          <a
-            href="tel:+493085607830"
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '6px',
-              backgroundColor: 'var(--paper)',
-              borderRadius: 'var(--r)',
-              padding: '20px 24px',
-              border: '1px solid var(--line-soft)',
-              textDecoration: 'none',
-              transition: 'border-color 0.15s ease, box-shadow 0.15s ease',
-            }}
-            onMouseEnter={(e) => {
-              const el = e.currentTarget as HTMLAnchorElement
-              el.style.borderColor = 'var(--brand)'
-              el.style.boxShadow = '0 4px 16px rgba(0,0,0,0.08)'
-            }}
-            onMouseLeave={(e) => {
-              const el = e.currentTarget as HTMLAnchorElement
-              el.style.borderColor = 'var(--line-soft)'
-              el.style.boxShadow = 'none'
-            }}
-          >
-            <span style={{ fontSize: '1.4rem' }}>📞</span>
-            <span
-              style={{
-                fontSize: '0.78rem',
-                fontWeight: 700,
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                color: 'var(--muted)',
-              }}
-            >
-              Anrufen
-            </span>
-            <span
-              style={{
-                fontFamily: 'var(--ff-display, Georgia, serif)',
-                fontSize: '1.05rem',
-                fontWeight: 600,
-                color: 'var(--ink)',
-              }}
-            >
-              030 85 60 78 30
-            </span>
-            <span style={{ fontSize: '0.82rem', color: 'var(--ink-soft)' }}>Mo–Fr, 07:00–15:30 Uhr</span>
-          </a>
-
-          {/* Email card */}
-          <a
-            href="mailto:info@historische-bauelemente.de"
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '6px',
-              backgroundColor: 'var(--paper)',
-              borderRadius: 'var(--r)',
-              padding: '20px 24px',
-              border: '1px solid var(--line-soft)',
-              textDecoration: 'none',
-              transition: 'border-color 0.15s ease, box-shadow 0.15s ease',
-            }}
-            onMouseEnter={(e) => {
-              const el = e.currentTarget as HTMLAnchorElement
-              el.style.borderColor = 'var(--brand)'
-              el.style.boxShadow = '0 4px 16px rgba(0,0,0,0.08)'
-            }}
-            onMouseLeave={(e) => {
-              const el = e.currentTarget as HTMLAnchorElement
-              el.style.borderColor = 'var(--line-soft)'
-              el.style.boxShadow = 'none'
-            }}
-          >
-            <span style={{ fontSize: '1.4rem' }}>✉</span>
-            <span
-              style={{
-                fontSize: '0.78rem',
-                fontWeight: 700,
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                color: 'var(--muted)',
-              }}
-            >
-              E-Mail
-            </span>
-            <span
-              style={{
-                fontFamily: 'var(--ff-display, Georgia, serif)',
-                fontSize: '0.95rem',
-                fontWeight: 600,
-                color: 'var(--ink)',
-                wordBreak: 'break-all',
-              }}
-            >
-              info@historische-bauelemente.de
-            </span>
-          </a>
-        </div>
-      </div>
-
       <style>{`
-        @media (max-width: 520px) {
-          .kontakt-direct-grid {
+        @media (max-width: 480px) {
+          .form-options-grid {
             grid-template-columns: 1fr !important;
           }
         }

@@ -21,6 +21,22 @@ const otherArticles = [
 export default function TreppenAltbaudetailsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: 'Historische Treppen & Altbaudetails fachgerecht erhalten',
+          description: 'Typische Schäden an historischen Holztreppen, fachgerechte Reparatur und warum sich der Erhalt lohnt.',
+          image: 'https://michael-krueger-seite.vercel.app/images/leistung-treppen-treppenhaus.jpg',
+          author: { '@type': 'Person', name: 'Michael Krüger', jobTitle: 'Tischlermeister', url: 'https://michael-krueger-seite.vercel.app/team' },
+          publisher: { '@type': 'Organization', name: 'Tischlerei Michael Krüger', url: 'https://michael-krueger-seite.vercel.app' },
+          datePublished: '2024-06-25',
+          dateModified: '2025-01-15',
+          mainEntityOfPage: 'https://michael-krueger-seite.vercel.app/blog/treppen-altbaudetails',
+          keywords: ['historische Treppen', 'Altbaudetails', 'Holztreppe', 'Restaurierung'],
+        }) }}
+      />
       <PageHero
         title="Historische Treppen & Altbaudetails fachgerecht erhalten"
         tags={['Treppen', 'Fachartikel']}
