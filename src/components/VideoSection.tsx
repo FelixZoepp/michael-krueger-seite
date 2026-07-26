@@ -38,7 +38,7 @@ export default function VideoSection() {
               controls
               preload="metadata"
               playsInline
-              poster="/images/michael-krueger-portrait.jpg"
+              poster="/images/video-poster-tueren.jpg"
               style={{
                 width: '100%',
                 height: 'auto',

@@ -8,36 +8,42 @@ const SERVICES = [
     title: 'Historische Fenster & Kastenfenster',
     description:
       'Fachgerechte Restaurierung von Berliner Kastenfenstern und historischen Holzfenstern – mit originalen Profilen und moderner Dichtungstechnik.',
+    href: '/leistungen/historische-fenster',
   },
   {
     image: '/images/leistung-energetische-fenstersanierung.jpg',
     title: 'Energetische Fenstersanierung',
     description:
       'Bessere Dämmwerte ohne Substanzverlust: neue Dichtungen, ertüchtigte Verglasung und justierte Beschläge für historische Fenster.',
+    href: '/leistungen/energetische-sanierung',
   },
   {
     image: '/images/leistung-wohnungseingangstuer.jpg',
     title: 'Wohnungseingangstüren',
     description:
       'Schallschutz, Einbruchschutz und Brandschutz nachrüsten – an bestehenden Altbautüren, ohne Austausch.',
+    href: '/leistungen/wohnungseingangstueren',
   },
   {
     image: '/images/leistung-historische-haustuer.jpg',
     title: 'Historische Haustüren',
     description:
       'Restaurierung oder originalgetreuer Nachbau historischer Haustüren – mit modernem Sicherheitsstandard.',
+    href: '/leistungen/historische-haustueren',
   },
   {
     image: '/images/leistung-reparatur-restaurierung.jpg',
     title: 'Reparatur & Restaurierung',
     description:
       'Einzelne Reparaturen an Fenstern, Türen und Holzbauelementen – schnell, fachgerecht und kostengünstig.',
+    href: '/leistungen/reparatur',
   },
   {
     image: '/images/leistung-treppen-treppenhaus.jpg',
     title: 'Treppen & Altbaudetails',
     description:
       'Historische Treppen aufarbeiten, Geländer befestigen und Details wie Zierleisten und Fensterbänke erhalten.',
+    href: '/leistungen/treppen',
   },
 ]
 
@@ -101,7 +107,7 @@ export default function LeistungenSection() {
                     {service.description}
                   </p>
                   <Link
-                    href="#kontakt"
+                    href={service.href}
                     className="service-mehr-link"
                     style={{
                       fontSize: '0.875rem',
