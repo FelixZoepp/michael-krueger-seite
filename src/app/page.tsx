@@ -129,7 +129,16 @@ export default function HomePage() {
             }}
           >
             Schildern Sie uns Ihr Anliegen am Telefon – wir geben Ihnen eine erste
-            Einschätzung, kostenfrei und unverbindlich. Gerne auch Bilder vorab per WhatsApp.
+            Einschätzung, kostenfrei und unverbindlich. Gerne auch Bilder vorab per{' '}
+            <a
+              href="https://wa.me/491636983248?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Ersteinsch%C3%A4tzung."
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'var(--brand)', textDecoration: 'underline', fontWeight: 600 }}
+            >
+              WhatsApp
+            </a>
+            .
           </p>
           <Link
             href="/kontakt"

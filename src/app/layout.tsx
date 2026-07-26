@@ -3,6 +3,7 @@ import { Fraunces, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import OrganizationSchema from "@/components/OrganizationSchema";
 
 const fraunces = Fraunces({
@@ -39,17 +40,17 @@ export const metadata: Metadata = {
     title: 'Tischlerei Michael Krüger | Historische Fenster & Türen',
     description: 'Meisterbetrieb für historische Fenster, Türen & Treppen in Berlin und Brandenburg. 25+ Jahre Erfahrung. Kostenlose Ersteinschätzung.',
     images: [{
-      url: '/images/team-krueger.jpg',
+      url: '/images/hero-kastenfenster-altbau.jpg',
       width: 1200,
       height: 630,
-      alt: 'Team der Tischlerei Michael Krüger in der Werkstatt in Zossen',
+      alt: 'Historische Kastenfenster restauriert von Tischlerei Krüger in Berlin',
     }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tischlerei Michael Krüger | Berlin & Brandenburg',
     description: 'Historische Fenster & Türen restaurieren statt ersetzen – Meisterbetrieb seit 2016.',
-    images: ['/images/team-krueger.jpg'],
+    images: ['/images/hero-kastenfenster-altbau.jpg'],
   },
   alternates: {
     canonical: 'https://michael-krueger-seite.vercel.app',
@@ -82,6 +83,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

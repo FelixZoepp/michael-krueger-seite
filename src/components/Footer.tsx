@@ -196,11 +196,11 @@ export default function Footer() {
             }}
           >
             <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.4)', margin: 0 }}>
-              © 2024 Tischlerei Michael Krüger
+              © {new Date().getFullYear()} Tischlerei Michael Krüger
             </p>
             <div style={{ display: 'flex', gap: '20px' }}>
-              <FooterLink href="#">Datenschutz</FooterLink>
-              <FooterLink href="#">Impressum</FooterLink>
+              <FooterLink href="/datenschutz">Datenschutz</FooterLink>
+              <FooterLink href="/impressum">Impressum</FooterLink>
             </div>
           </div>
         </div>
