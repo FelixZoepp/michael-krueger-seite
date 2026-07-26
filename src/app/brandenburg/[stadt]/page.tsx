@@ -284,7 +284,7 @@ export default async function BrandenburgStadtPage({ params }: Props) {
                       {service.description}
                     </p>
                     <Link
-                      href={`/blog/${service.slug}`}
+                      href={`/leistungen/${service.slug}`}
                       style={{
                         fontSize: '0.85rem',
                         fontWeight: 600,

@@ -29,37 +29,37 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Die Gründerzeit-Kastenfenster in Prenzlauer Berg sind oft noch im Original erhalten. Wir reparieren Rahmen, erneuern Dichtungen und verbessern die Dämmwerte – ohne den historischen Charakter zu zerstören.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Profilierte Holz-Haustüren mit Bleiglasoberlicht sind das Gesicht Ihres Gründerzeithauses. Wir restaurieren das Original fachgerecht statt es durch moderne Türen zu ersetzen.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Denkmalgerechte Fenstersanierung',
         description:
           'Viele Häuser in Prenzlauer Berg stehen unter Denkmalschutz. Wir kennen die Berliner Denkmalschutzbehörde und sorgen für Lösungen, die genehmigt werden.',
-        slug: '/blog/denkmalschutz',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Bessere Dämmwerte ohne Substanzverlust: Vorsatzflügel, neue Verglasung und sorgfältige Abdichtung machen Ihre historischen Fenster energieeffizienter.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
       {
         title: 'Wohnungseingangstüren',
         description:
           'Schall- und Einbruchschutz nachrüsten an bestehenden Altbau-Wohnungstüren – passend zum historischen Treppenhaus.',
-        slug: '/blog/wohnungstueren-schallschutz',
+        slug: '/leistungen/wohnungseingangstueren',
       },
       {
         title: 'Treppen & Altbaudetails',
         description:
           'Stucktreppen, Geländer und Eingangshallen gehören zum Gründerzeit-Ensemble. Wir erhalten, reparieren und ergänzen fehlende Holzdetails handwerklich.',
-        slug: '/blog/treppen-altbaudetails',
+        slug: '/leistungen/treppen',
       },
     ],
     neighborhoods: ['Kollwitzplatz', 'Helmholtzplatz', 'Bötzowviertel', 'Teutoburger Platz', 'Pfefferberg-Kiez'],
@@ -98,31 +98,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Kreuzberger Mietshäuser besitzen oft original erhaltene Kastenfenster aus der Kaiserzeit. Wir restaurieren Rahmen, dichten ab und ergänzen fehlende Profile nach historischem Vorbild.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Schlichte, aber charaktervolle Gründerzeit-Haustüren in Kreuzberg – wir reparieren Risse, schleifen, lackieren und bringen die Türen ohne Neubau auf modernen Standard.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Wohnungseingangstüren',
         description:
           'In dicht besiedelten Mietshäusern ist Schallschutz entscheidend. Wir rüsten bestehende Altbautüren mit Dichtungen, Schlössern und Sicherheitsbeschlägen nach.',
-        slug: '/blog/wohnungstueren-schallschutz',
+        slug: '/leistungen/wohnungseingangstueren',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Auch in Kreuzberger Altbauten lassen sich Heizkosten senken – durch Aufarbeitung und Abdichtung der vorhandenen Kastenfenster statt kostspieligem Austausch.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
       {
         title: 'Reparatur & Wartung',
         description:
           'Klemmt ein Fenster oder lässt sich eine alte Haustür nicht mehr richtig schließen? Wir beheben Schäden schnell und fachgerecht – auch als Notfallreparatur.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
     ],
     neighborhoods: ['Bergmannkiez', 'SO36', 'Graefekiez', 'Chamissokiez', 'Wrangelkiez'],
@@ -161,31 +161,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Charlottenburgs Gründerzeit- und Jugendstil-Kastenfenster sind oft aufwendig profiliert. Wir restaurieren Gehrungen, erneuern Glasfalzdichtungen und stellen originale Beschläge wieder her.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Eichen- und Mahagonihaustüren mit Jugendstilschnitzereien und Bleiglasfüllungen sind das Aushängeschild bürgerlicher Charlottenburger Häuser. Wir erhalten das Original.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Denkmalgerechte Fenstersanierung',
         description:
           'Beim Bezirksamt Charlottenburg-Wilmersdorf beantragen wir Genehmigungen und stimmen Materialien ab – damit Ihre Sanierung ohne Behördenprobleme abläuft.',
-        slug: '/blog/denkmalschutz',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Hochwertige Jugendstil-Kastenfenster lassen sich durch Vorsatzflügel und Wärmeschutzverglasung deutlich energieeffizienter machen – ohne Materialwechsel.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
       {
         title: 'Treppen & Altbaudetails',
         description:
           'Repräsentative Eingangshallen mit Marmorstufen und Holzgeländern – wir ergänzen fehlende Details und restaurieren Treppen im historischen Stil.',
-        slug: '/blog/treppen-altbaudetails',
+        slug: '/leistungen/treppen',
       },
     ],
     neighborhoods: ['Fasanenstraße', 'Savignyplatz', 'Stuttgarter Platz', 'Kantstraße', 'Schloßstraße'],
@@ -224,31 +224,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Im Schöneberger Altbau stecken oft gut erhaltene Fichtenholz-Kastenfenster. Wir schleifen, dichten, verglühen und bringen die Flügel wieder in Form.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Schöneberger Haustüren mit Oberlicht und historischen Beschlägen sind erhaltenswert. Wir restaurieren ohne Neubau und passen das Ergebnis an heutige Sicherheitsstandards an.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Wohnungseingangstüren',
         description:
           'In den kompakten Schöneberger Mietshäusern ist guter Schallschutz essenziell. Wir rüsten Altbautüren mit modernen Dichtungen und Mehrpunktschlössern nach.',
-        slug: '/blog/wohnungstueren-schallschutz',
+        slug: '/leistungen/wohnungseingangstueren',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Durch gezielte Abdichtung und Vorsatzflügel lässt sich der Energieverbrauch in Schöneberger Altbauten spürbar senken – ohne Charakter zu verlieren.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
       {
         title: 'Reparatur & Wartung',
         description:
           'Schöneberger Altbaufenster, die klemmen, pfeifen oder undicht sind – wir kommen schnell, beheben die Ursache und hinterlassen keine offenen Fragen.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
     ],
     neighborhoods: ['Winterfeldtplatz', 'Akazienstraße', 'Goltzstraße', 'Bayerisches Viertel', 'Nollendorfplatz'],
@@ -287,31 +287,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Ob im Samariterkiez oder am Boxhagener Platz – wir kennen den gemischten Bestand in Friedrichshain und entwickeln passende Lösungen für jede Fenstergeneration.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Erhaltene Gründerzeit-Haustüren in Friedrichshain verdienen eine fachgerechte Restaurierung statt billiger Ersatztüren. Wir reparieren, schleifen und fassen neu.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Wohnungseingangstüren',
         description:
           'Schallschutz und Sicherheit für Wohnungseingangstüren in Friedrichshainer Mietshäusern – nachrüstbar ohne großen baulichen Aufwand.',
-        slug: '/blog/wohnungstueren-schallschutz',
+        slug: '/leistungen/wohnungseingangstueren',
       },
       {
         title: 'Denkmalgerechte Fenstersanierung',
         description:
           'Für Objekte im Milieuschutzgebiet Boxhagener Platz beraten wir zu genehmigungskonformen Lösungen und begleiten den Abstimmungsprozess mit der Behörde.',
-        slug: '/blog/denkmalschutz',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Reparatur & Wartung',
         description:
           'Defekte Fenstergriffe, klemmende Flügel oder durchhängende Scharniere – wir beheben kleine Schäden, bevor sie zu großen werden.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
     ],
     neighborhoods: ['Boxhagener Platz', 'Samariterviertel', 'Simon-Dach-Straße', 'Rüdersdorfer Straße', 'Frankfurter Allee Nord'],
@@ -350,31 +350,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Weddinger Arbeiterhäuser stecken voller robuster Kiefernholz-Kastenfenster, die oft nur Abdichtung und frischen Anstrich benötigen. Wir beurteilen ehrlich und arbeiten effizient.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Gerade in älteren Wedding-Häusern lässt sich durch gezielte Abdichtung viel Heizenergie sparen – ohne die Fenster auszutauschen.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Schlichte, aber solide Gründerzeit-Haustüren in Wedding – wir reparieren, schleifen und lackieren statt auszutauschen.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Wohnungseingangstüren',
         description:
           'Schalldichte und einbruchhemmende Wohnungseingangstüren für dicht besiedelte Weddinger Mietshäuser – nachrüstbar am Bestand.',
-        slug: '/blog/wohnungstueren-schallschutz',
+        slug: '/leistungen/wohnungseingangstueren',
       },
       {
         title: 'Reparatur & Wartung',
         description:
           'Schnelle Reparaturen für klemmende Fenster, defekte Beschläge und undichte Fugen – wir sind in Wedding regelmäßig vor Ort.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
     ],
     neighborhoods: ['Nettelbeckufer', 'Afrikanisches Viertel', 'Gesundbrunnen', 'Reinickendorfer Straße', 'Sparrplatz'],
@@ -413,31 +413,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Wilmersdorfer Doppelkastenfenster mit Sprossen und Messingbeschlägen restaurieren wir mit der Sorgfalt, die diese Substanz verdient – originalgetreu und dauerhaft.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Jugendstil-Haustüren mit Ornamentbeschlägen und Bleiglasfüllungen sind das Aushängeschild der Wilmersdorfer Straßenzüge. Wir bewahren das Original.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Denkmalgerechte Fenstersanierung',
         description:
           'Für denkmalgeschützte Wilmersdorfer Objekte kennen wir die Abstimmungswege mit dem Bezirksamt und sorgen für reibungslose Genehmigungsverfahren.',
-        slug: '/blog/denkmalschutz',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Vorsatzflügel und Wärmeschutzverglasung steigern die Energieeffizienz ohne Eingriff in die historische Optik – ideal für denkmalgeschützte Häuser in Wilmersdorf.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
       {
         title: 'Treppen & Altbaudetails',
         description:
           'Repräsentative Treppenhäuser mit Holzgeländern und Mosaikböden – wir ergänzen Fehlteile handwerklich und erhalten die Atmosphäre des Hauses.',
-        slug: '/blog/treppen-altbaudetails',
+        slug: '/leistungen/treppen',
       },
     ],
     neighborhoods: ['Ludwigkirchplatz', 'Pariser Straße', 'Fehrbelliner Platz', 'Güntzelstraße', 'Blissestraße'],
@@ -476,31 +476,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Tempelhofs Gründerzeit-Kastenfenster aus Kiefernholz – wir beurteilen den Bestand ehrlich und arbeiten effizient, ohne unnötige Kosten zu verursachen.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Durch Abdichtung und Vorsatzflügel lässt sich in Tempelhöfer Altbauten der Energieverbrauch erheblich senken – wirtschaftlich und ohne Eingriff ins Erscheinungsbild.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Schlichte Holz-Haustüren aus dem frühen 20. Jahrhundert – wir reparieren, schleifen und lackieren und erhalten den Charakter des Hauses.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Wohnungseingangstüren',
         description:
           'In Tempelhöfer Mehrfamilienhäusern nachrüsten: besserer Schallschutz und Sicherheit für bestehende Wohnungseingangstüren.',
-        slug: '/blog/wohnungstueren-schallschutz',
+        slug: '/leistungen/wohnungseingangstueren',
       },
       {
         title: 'Reparatur & Wartung',
         description:
           'Kleine Schäden, bevor sie groß werden: Fensterwartung, Beschlagreparatur und Dichtigkeitsprüfung für Tempelhöfer Altbauten.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
     ],
     neighborhoods: ['Tempelhof-Mitte', 'Mariendorf', 'Lichtenrade', 'Ringbahnviertel', 'Alt-Tempelhof'],
@@ -539,31 +539,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Unberührte Gründerzeit-Kastenfenster in Neukölln sind ein Schatz. Wir restaurieren schonend und erhalten die originale Holzsubstanz so weit wie möglich.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Rixdorfer Haustüren mit Oberlicht und historischen Beschlägen – wir restaurieren, ohne den Charakter des Hauses zu verändern.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'In Neuköllner Altbauten senkt gezielte Fensterabdichtung die Heizkosten signifikant – ohne Austausch der historischen Originalfenster.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
       {
         title: 'Wohnungseingangstüren',
         description:
           'Schallschutz und Einbruchschutz nachrüsten an Wohnungseingangstüren in Neuköllner Mietshäusern – diskret und ohne Tausch.',
-        slug: '/blog/wohnungstueren-schallschutz',
+        slug: '/leistungen/wohnungseingangstueren',
       },
       {
         title: 'Denkmalgerechte Fenstersanierung',
         description:
           'Für denkmalgeschützte Objekte in Rixdorf beraten wir zu genehmigungskonformen Restaurierungslösungen.',
-        slug: '/blog/denkmalschutz',
+        slug: '/leistungen/historische-fenster',
       },
     ],
     neighborhoods: ['Rixdorf', 'Karl-Marx-Straße', 'Richardplatz', 'Reuterkiez', 'Rollberg'],
@@ -602,31 +602,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Moabiter Kastenfenster brauchen keine Ornamentik – aber sie brauchen professionelle Aufarbeitung. Wir reparieren funktional und dauerhaft.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Durch Abdichtung und Vorsatzscheiben lässt sich in Moabiter Altbauten der Energieverbrauch erheblich senken – ohne die Originalfenster zu ersetzen.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Schlichte Moabiter Haustüren restaurieren, schleifen und lackieren – wir erhalten die originale Substanz und verbessern gleichzeitig Sicherheit und Dichtigkeit.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Wohnungseingangstüren',
         description:
           'In dicht besiedelten Moabiter Mietshäusern ist Schallschutz besonders wichtig. Wir rüsten bestehende Türen mit Dichtungen und modernen Schlössern nach.',
-        slug: '/blog/wohnungstueren-schallschutz',
+        slug: '/leistungen/wohnungseingangstueren',
       },
       {
         title: 'Reparatur & Wartung',
         description:
           'Klemmt, pfeift oder zieht? Wir reparieren schnell und unkompliziert – auch als Einzel-Reparaturauftrag ohne Mindestumsatz.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
     ],
     neighborhoods: ['Turmstraße', 'Stephankiez', 'Ottostraße', 'Lehrter Straße', 'Alt-Moabit'],
@@ -665,31 +665,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Denkmalgerechte Fenstersanierung',
         description:
           'In Berlin-Mitte ist denkmalgerechtes Arbeiten nicht die Ausnahme, sondern die Regel. Wir kennen die Anforderungen der Berliner Denkmalschutzbehörde und arbeiten seit Jahren erfolgreich in diesem Umfeld.',
-        slug: '/blog/denkmalschutz',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Gründerzeit-Kastenfenster in Mitte – teilweise im historischen Kontext von Stadtpalais und repräsentativen Mietshäusern. Wir restaurieren mit höchster handwerklicher Sorgfalt.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Haustüren in Berlin-Mitte sind oft Teil denkmalgeschützter Ensembles. Wir restaurieren originalgetreu – vom barocken Türblatt bis zur Gründerzeit-Haustür mit Bleiglas.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Auch im Denkmalschutz ist Energieeffizienz möglich: Wir setzen auf Vorsatzflügel und abgestimmte Verglasungslösungen, die von der Behörde genehmigt werden.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
       {
         title: 'Treppen & Altbaudetails',
         description:
           'Historische Treppenhäuser, Stuck und Holzgeländer in Mitte – wir erhalten und ergänzen handwerklich präzise.',
-        slug: '/blog/treppen-altbaudetails',
+        slug: '/leistungen/treppen',
       },
     ],
     neighborhoods: ['Scheunenviertel', 'Nikolaiviertel', 'Hackescher Markt', 'Spandauer Vorstadt', 'Dorotheenstadt'],
@@ -728,31 +728,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Pankower Villen-Kastenfenster mit Sprossen und Oberlichtflügeln – wir restaurieren präzise und erhalten die Eigenheit jedes Hauses.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Villen- und Landhaushaustüren aus der Kaiserzeit – Doppelflügtüren, Wintergartenelemente und Vordachkonstruktionen – restaurieren wir mit handwerklicher Sorgfalt.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Treppen & Altbaudetails',
         description:
           'Villentreppenhäuser mit Holzgeländern, Balustergittern und Parkettböden – wir erhalten, ergänzen und restaurieren historische Holzdetails.',
-        slug: '/blog/treppen-altbaudetails',
+        slug: '/leistungen/treppen',
       },
       {
         title: 'Denkmalgerechte Fenstersanierung',
         description:
           'Schlosspark-nahe Objekte in Pankow stehen oft unter Denkmalschutz. Wir klären Auflagen vorab und sorgen für genehmigungskonforme Lösungen.',
-        slug: '/blog/denkmalschutz',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Auch in freistehenden Pankower Villen lohnt sich die energetische Ertüchtigung der historischen Holzfenster – wir zeigen Ihnen, wie das ohne Substanzverlust geht.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
     ],
     neighborhoods: ['Schlosspark Schönhausen', 'Pankow-Mitte', 'Buch', 'Niederschönhausen', 'Weißensee'],
@@ -791,31 +791,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Steglitzer Bürgerhaus-Kastenfenster mit hochwertigen Holzprofilen – wir restaurieren sorgfältig und erhalten die Qualität der Originalsubstanz.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Bürgerliche Haustüren in Steglitz – oft mit Oberlicht, Profilrahmen und historischen Beschlägen. Wir restaurieren statt ersetzen.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Energieeffizienz und historischer Charakter schließen sich nicht aus: Wir zeigen Steglitzer Eigentümern, wie Vorsatzflügel und moderne Verglasung ohne Substanzverlust funktionieren.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
       {
         title: 'Treppen & Altbaudetails',
         description:
           'Profilierte Holzgeländer, Stuckdecken und historische Innentüren – wir ergänzen fehlende Details und erhalten die Atmosphäre bürgerlicher Altbauten.',
-        slug: '/blog/treppen-altbaudetails',
+        slug: '/leistungen/treppen',
       },
       {
         title: 'Wohnungseingangstüren',
         description:
           'Schalldichte und einbruchhemmende Wohnungseingangstüren für Steglitzer Mehrfamilienhäuser – Nachrüstung ohne Neubau.',
-        slug: '/blog/wohnungstueren-schallschutz',
+        slug: '/leistungen/wohnungseingangstueren',
       },
     ],
     neighborhoods: ['Schloßstraße', 'Südende', 'Lankwitz', 'Lichterfelde West', 'Steglitz-Mitte'],
@@ -854,31 +854,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Gründerzeit-Kastenfenster am Rande der Spandauer Altstadt – wir restaurieren fachgerecht und erhalten die Originalsubstanz.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Von der frühklassizistischen Bürgerhaustür bis zur Gründerzeit-Eingangstür – Spandaus Türen sind vielfältig. Wir restaurieren mit historischem Verständnis.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Denkmalgerechte Fenstersanierung',
         description:
           'Die Spandauer Altstadt ist ein Gesamtdenkmal. Hier gelten strenge Auflagen für jede Veränderung an Fenstern und Türen. Wir kennen die Anforderungen.',
-        slug: '/blog/denkmalschutz',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Treppen & Altbaudetails',
         description:
           'Historische Treppenhäuser und Holzdetails in Spandauer Bürgerhäusern – wir erhalten, ergänzen und restaurieren handwerklich präzise.',
-        slug: '/blog/treppen-altbaudetails',
+        slug: '/leistungen/treppen',
       },
       {
         title: 'Reparatur & Wartung',
         description:
           'Für kleine Schäden an historischen Fenstern und Türen in Spandau – wir kommen auch für Einzelreparaturen.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
     ],
     neighborhoods: ['Spandauer Altstadt', 'Haselhorst', 'Gatow', 'Kladow', 'Spandauer Neustadt'],
@@ -917,31 +917,31 @@ export const berlinBezirke: BezirkData[] = [
         title: 'Kastenfenster aufarbeiten & restaurieren',
         description:
           'Zehlendorfer Villen-Kastenfenster aus Eiche oder Lärche – wir restaurieren mit handwerklicher Präzision und erhalten die Originalsubstanz für weitere Jahrzehnte.',
-        slug: '/blog/kastenfenster',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Historische Haustüren restaurieren',
         description:
           'Zweiflügelige Villeneingangstüren mit Bleiglasfüllungen, Holzschnitzdetails und Messingbeschlägen – Zehlendorfs Haustüren sind außergewöhnlich. Wir bewahren sie.',
-        slug: '/blog/historische-haustueren',
+        slug: '/leistungen/historische-haustueren',
       },
       {
         title: 'Treppen & Altbaudetails',
         description:
           'Eichenholz-Treppenhäuser, Eingangspodeste und Balkongeländer in Zehlendorfer Villen – wir erhalten und ergänzen mit originalgetreuen Holzarbeiten.',
-        slug: '/blog/treppen-altbaudetails',
+        slug: '/leistungen/treppen',
       },
       {
         title: 'Denkmalgerechte Fenstersanierung',
         description:
           'Für denkmalgeschützte Zehlendorfer Villen entwickeln wir Konzepte, die den Anforderungen der Behörde entsprechen und gleichzeitig modernen Komfort ermöglichen.',
-        slug: '/blog/denkmalschutz',
+        slug: '/leistungen/historische-fenster',
       },
       {
         title: 'Energetische Altbaufenstersanierung',
         description:
           'Historische Sprossenfenster aus Eiche lassen sich durch Vorsatzflügel und Wärmeschutzverglasung deutlich energieeffizienter machen – ohne das Erscheinungsbild zu verändern.',
-        slug: '/blog/energetische-sanierung',
+        slug: '/leistungen/energetische-sanierung',
       },
     ],
     neighborhoods: ['Mexikoplatz', 'Onkel-Tom-Straße', 'Nikolassee', 'Wannsee', 'Dahlem'],

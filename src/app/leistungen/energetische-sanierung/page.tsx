@@ -21,6 +21,26 @@ const problems = [
 export default function EnergetischeSanierungPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Energetische Fenstersanierung',
+          description: 'Energetische Sanierung bestehender Fenster in Berlin & Brandenburg. Neue Dichtungen, ertüchtigte Verglasung und verbesserte U-Werte – ohne Substanzverlust.',
+          provider: {
+            '@type': 'LocalBusiness',
+            name: 'Tischlerei Michael Krüger',
+            url: 'https://michael-krueger-seite.vercel.app',
+            telephone: '+493085607830',
+          },
+          areaServed: [
+            { '@type': 'City', name: 'Berlin' },
+            { '@type': 'State', name: 'Brandenburg' },
+          ],
+          url: 'https://michael-krueger-seite.vercel.app/leistungen/energetische-sanierung',
+        }) }}
+      />
       <BreadcrumbSchema
         items={[
           { name: 'Startseite', url: '/' },

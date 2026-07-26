@@ -28,35 +28,49 @@ export default async function BezirkPage({ params }: Props) {
   const data = getBezirkBySlug(slug)
   if (!data) notFound()
 
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'Tischlerei Krüger',
-    description: `Restaurierung historischer Fenster & Türen in ${data.name}, Berlin.`,
-    url: `https://michael-krueger-seite.vercel.app/berlin/${data.slug}`,
-    telephone: '+493085607830',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: `${data.name}, Berlin`,
-      addressCountry: 'DE',
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      name: 'Tischlerei Krüger',
+      description: `Restaurierung historischer Fenster & Türen in ${data.name}, Berlin.`,
+      url: `https://michael-krueger-seite.vercel.app/berlin/${data.slug}`,
+      telephone: '+493085607830',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: `${data.name}, Berlin`,
+        addressCountry: 'DE',
+      },
+      areaServed: {
+        '@type': 'Place',
+        name: `${data.name}, ${data.bezirk}, Berlin`,
+      },
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Leistungen',
+        itemListElement: data.services.map((s) => ({
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: s.title,
+            description: s.description,
+          },
+        })),
+      },
     },
-    areaServed: {
-      '@type': 'Place',
-      name: `${data.name}, ${data.bezirk}, Berlin`,
-    },
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Leistungen',
-      itemListElement: data.services.map((s) => ({
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: s.title,
-          description: s.description,
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: data.faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
         },
       })),
     },
-  }
+  ]
 
   return (
     <>

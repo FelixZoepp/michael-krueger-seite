@@ -21,6 +21,26 @@ const problems = [
 export default function WohnungseingangsturenPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Wohnungseingangstüren sanieren & nachrüsten',
+          description: 'Schallschutz, Einbruchschutz und Brandschutz für Wohnungseingangstüren im Altbau. Nachrüstung an bestehenden Türen ohne Austausch – Tischlerei Krüger Berlin.',
+          provider: {
+            '@type': 'LocalBusiness',
+            name: 'Tischlerei Michael Krüger',
+            url: 'https://michael-krueger-seite.vercel.app',
+            telephone: '+493085607830',
+          },
+          areaServed: [
+            { '@type': 'City', name: 'Berlin' },
+            { '@type': 'State', name: 'Brandenburg' },
+          ],
+          url: 'https://michael-krueger-seite.vercel.app/leistungen/wohnungseingangstueren',
+        }) }}
+      />
       <BreadcrumbSchema
         items={[
           { name: 'Startseite', url: '/' },

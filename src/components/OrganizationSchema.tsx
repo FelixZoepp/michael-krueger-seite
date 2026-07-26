@@ -68,6 +68,9 @@ export default function OrganizationSchema() {
       'Treppen Restaurierung Altbau',
       'Brandenburger Kiefernholz',
     ],
+    sameAs: [
+      'https://wa.me/491636983248',
+    ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Leistungen',
@@ -79,6 +82,7 @@ export default function OrganizationSchema() {
             name: 'Historische Fenster & Kastenfenster restaurieren',
             description:
               'Fachgerechte Restaurierung von Kastenfenstern im Berliner Altbau mit Originalprofilierung und moderner Abdichtung.',
+            url: 'https://michael-krueger-seite.vercel.app/leistungen/historische-fenster',
           },
         },
         {
@@ -88,15 +92,37 @@ export default function OrganizationSchema() {
             name: 'Energetische Fenstersanierung',
             description:
               'Verbesserung der Wärmedämmung historischer Fenster ohne Substanzverlust.',
+            url: 'https://michael-krueger-seite.vercel.app/leistungen/energetische-sanierung',
           },
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Historische Türen restaurieren',
+            name: 'Wohnungseingangstüren',
+            description:
+              'Schallschutz, Einbruchschutz und Brandschutz nachrüsten an bestehenden Altbautüren.',
+            url: 'https://michael-krueger-seite.vercel.app/leistungen/wohnungseingangstueren',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Historische Haustüren restaurieren',
             description:
               'Restaurierung und originalgetreuer Nachbau historischer Haus- und Wohnungseingangstüren.',
+            url: 'https://michael-krueger-seite.vercel.app/leistungen/historische-haustueren',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Reparatur & Restaurierung',
+            description:
+              'Einzelreparaturen an Fenstern, Türen und Holzbauelementen – schnell und fachgerecht.',
+            url: 'https://michael-krueger-seite.vercel.app/leistungen/reparatur',
           },
         },
         {
@@ -106,6 +132,7 @@ export default function OrganizationSchema() {
             name: 'Treppen & Altbaudetails',
             description:
               'Reparatur und Restaurierung historischer Treppen, Geländer und Altbaudetails.',
+            url: 'https://michael-krueger-seite.vercel.app/leistungen/treppen',
           },
         },
       ],

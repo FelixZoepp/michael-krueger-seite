@@ -21,6 +21,26 @@ const problems = [
 export default function HistorischeFensterPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Historische Fenster & Kastenfenster restaurieren',
+          description: 'Fachgerechte Restaurierung historischer Fenster und Kastenfenster in Berlin & Brandenburg. Originalprofile erhalten, moderne Dichtungstechnik, 40–60 % günstiger als Austausch.',
+          provider: {
+            '@type': 'LocalBusiness',
+            name: 'Tischlerei Michael Krüger',
+            url: 'https://michael-krueger-seite.vercel.app',
+            telephone: '+493085607830',
+          },
+          areaServed: [
+            { '@type': 'City', name: 'Berlin' },
+            { '@type': 'State', name: 'Brandenburg' },
+          ],
+          url: 'https://michael-krueger-seite.vercel.app/leistungen/historische-fenster',
+        }) }}
+      />
       <BreadcrumbSchema
         items={[
           { name: 'Startseite', url: '/' },

@@ -21,6 +21,26 @@ const problems = [
 export default function TreppenPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Treppen & Altbaudetails aufarbeiten',
+          description: 'Treppenstufen, Geländer, Zierleisten und Fensterbänke im Altbau fachgerecht aufarbeiten. Substanzerhalt und handwerkliche Qualität – Tischlerei Krüger Berlin.',
+          provider: {
+            '@type': 'LocalBusiness',
+            name: 'Tischlerei Michael Krüger',
+            url: 'https://michael-krueger-seite.vercel.app',
+            telephone: '+493085607830',
+          },
+          areaServed: [
+            { '@type': 'City', name: 'Berlin' },
+            { '@type': 'State', name: 'Brandenburg' },
+          ],
+          url: 'https://michael-krueger-seite.vercel.app/leistungen/treppen',
+        }) }}
+      />
       <BreadcrumbSchema
         items={[
           { name: 'Startseite', url: '/' },

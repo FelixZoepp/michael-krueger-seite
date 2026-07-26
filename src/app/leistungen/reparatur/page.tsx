@@ -21,6 +21,26 @@ const problems = [
 export default function ReparaturPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Reparatur & Restaurierung von Fenstern und Türen',
+          description: 'Schnelle Einzelreparaturen an Fenstern, Türen und Holzbauteilen in Berlin & Brandenburg. Fachgerecht, kostengünstig, ohne unnötige Komplettsanierung.',
+          provider: {
+            '@type': 'LocalBusiness',
+            name: 'Tischlerei Michael Krüger',
+            url: 'https://michael-krueger-seite.vercel.app',
+            telephone: '+493085607830',
+          },
+          areaServed: [
+            { '@type': 'City', name: 'Berlin' },
+            { '@type': 'State', name: 'Brandenburg' },
+          ],
+          url: 'https://michael-krueger-seite.vercel.app/leistungen/reparatur',
+        }) }}
+      />
       <BreadcrumbSchema
         items={[
           { name: 'Startseite', url: '/' },

@@ -28,7 +28,7 @@ export const brandenburgStaedte: StadtData[] = [
         title: 'Kastenfenster-Restaurierung',
         description:
           'Behutsame Aufarbeitung historischer Kastenfenster im Holländischen Viertel und in Gründerzeitwohnungen – mit denkmalkonformer Verglasung und Beschlagtechnik.',
-        slug: 'kastenfenster',
+        slug: 'historische-fenster',
       },
       {
         title: 'Denkmalschutz-Fenster',
@@ -52,7 +52,7 @@ export const brandenburgStaedte: StadtData[] = [
         title: 'Treppenhaus & Altbaudetails',
         description:
           'Instandsetzung historischer Treppengeländer, Stuckprofile und Holzdetails in Potsdamer Gründerzeit- und Kaiserreichbauten.',
-        slug: 'treppen-altbaudetails',
+        slug: 'treppen',
       },
     ],
     highlights: [
@@ -80,7 +80,7 @@ export const brandenburgStaedte: StadtData[] = [
         title: 'Kastenfenster-Restaurierung',
         description:
           'Aufarbeitung der charakteristischen Gründerzeitkastenfenster in Luckenwaldes Innenstadt – Holzreparatur, Dichtung, Beschläge und Anstrich nach historischem Vorbild.',
-        slug: 'kastenfenster',
+        slug: 'historische-fenster',
       },
       {
         title: 'Historische Haustüren',
@@ -132,7 +132,7 @@ export const brandenburgStaedte: StadtData[] = [
         title: 'Fachwerk-Fenster & Türen',
         description:
           'Denkmalgerechter Nachbau von Holzfenstern und Türen für Fachwerkbauten – mit historischen Profilquerschnitten und atmungsaktiven Leinölfarben.',
-        slug: 'kastenfenster',
+        slug: 'historische-fenster',
       },
       {
         title: 'Historische Haustüren',
@@ -172,7 +172,7 @@ export const brandenburgStaedte: StadtData[] = [
         title: 'Kastenfenster-Restaurierung',
         description:
           'Aufarbeitung gründerzeitlicher Kastenfenster in Königs Wusterhausen – besonders für die Villenkolonie rund um das Schloss mit ihren großformatigen Fensterprofilen.',
-        slug: 'kastenfenster',
+        slug: 'historische-fenster',
       },
       {
         title: 'Verandatüren & Terrassentüren',
@@ -218,7 +218,7 @@ export const brandenburgStaedte: StadtData[] = [
         title: 'Kastenfenster-Restaurierung',
         description:
           'Aufarbeitung gründerzeitlicher Kastenfenster in Teltows Stadterweiterungsgebieten – mit Holzreparatur, neuen Dichtungen und originalgetreuer Beschlagtechnik.',
-        slug: 'kastenfenster',
+        slug: 'historische-fenster',
       },
       {
         title: 'Historische Fenster & Schlagläden',
@@ -270,7 +270,7 @@ export const brandenburgStaedte: StadtData[] = [
         title: 'Renaissance- & Barockfenster',
         description:
           'Restaurierung und denkmalgerechter Nachbau von Fenstern für Luckaus Renaissance- und Barockgebäude – mit historischen Profilquerschnitten und mundgeblasenem Glas auf Anfrage.',
-        slug: 'kastenfenster',
+        slug: 'historische-fenster',
       },
       {
         title: 'Historische Haustüren & Tore',
@@ -288,7 +288,7 @@ export const brandenburgStaedte: StadtData[] = [
         title: 'Treppenhaus & Altbaudetails',
         description:
           'Erhalt und Restaurierung historischer Treppenhäuser, Geländer und Holzdetails in Luckaus Bürgerhäusern.',
-        slug: 'treppen-altbaudetails',
+        slug: 'treppen',
       },
     ],
     highlights: [
@@ -316,7 +316,7 @@ export const brandenburgStaedte: StadtData[] = [
         title: 'Kastenfenster-Restaurierung',
         description:
           'Aufarbeitung gründerzeitlicher Kastenfenster in Zossen und Umgebung – kurze Wege, lokale Ortskenntnis, faire Preise durch geringe Anfahrt.',
-        slug: 'kastenfenster',
+        slug: 'historische-fenster',
       },
       {
         title: 'Historische Haustüren',
@@ -368,7 +368,7 @@ export const brandenburgStaedte: StadtData[] = [
         title: 'Kastenfenster-Restaurierung',
         description:
           'Restaurierung gründerzeitlicher Kastenfenster in Beelitz – mit Holzreparatur, neuen Dichtungen und denkmalkonformer Verglasung.',
-        slug: 'kastenfenster',
+        slug: 'historische-fenster',
       },
       {
         title: 'Großdenkmal-Sanierung',
